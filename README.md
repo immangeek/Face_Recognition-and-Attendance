@@ -1,4 +1,5 @@
 # Face Recognition and Attendance
+![textimage](https://github.com/immangeek/Face_Recognition-and-Attendance/blob/b0475b3b76ccddc05a4ab28d724f59d21099ca0e/Other%20Files/Face_Recognition_Cover.png)
 
 ## Learned in these Projects
 
