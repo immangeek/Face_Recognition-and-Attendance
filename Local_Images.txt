@@ -1,0 +1,22 @@
+from statistics import mode
+from unittest import result
+import cv2 as cv
+import face_recognition
+
+
+img = cv.imread("Reference/imman_test.jpg")
+rgb_img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
+img_encoding = face_recognition.face_encodings(rgb_img)[0]
+
+
+img2 = cv.imread("Reference/imman.jpg")
+rgb_img2 = cv.cvtColor(img2,cv.COLOR_BGR2RGB)
+img_encoding2 = face_recognition.face_encodings(rgb_img2)[0]
+
+result = face_recognition.compare_faces([img_encoding],img_encoding2)
+print("Result: ", result)
+
+
+cv.imshow("img",img)
+cv.imshow("img 2",img2)
+cv.waitKey(2000)
