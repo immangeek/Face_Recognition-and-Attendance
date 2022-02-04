@@ -20,3 +20,5 @@ print("Result: ", result)
 cv.imshow("img",img)
 cv.imshow("img 2",img2)
 cv.waitKey(2000)
+
+Try with Luck
